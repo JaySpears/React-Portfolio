@@ -1,0 +1,59 @@
+//Importing global variables and styles.
+@import '../../styles/styles.scss';
+
+footer{
+    width: 100%;
+    background-color: #1a1a1a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    ul{
+        padding-left: 0px;
+        float: left;
+        margin-top: 18px;
+        @media #{$mobile}{
+            float: none;
+            padding-top: 10px;
+            margin: 0 auto;
+        }
+        li{
+            float: left;
+            color: white;
+            margin: 20px 18px 0px 18px;
+            font-size: 13px;
+            list-style: none;
+            &:nth-child(1){
+                margin-left: 0px;
+            }
+            @media #{$mobile}{
+                margin-top: 10px;
+            }
+            a{
+                color: white;
+                transition: color 1s;
+                &:hover{
+                    color: lightblue;
+                }
+            }
+        }
+    }
+    p{
+        color: white;
+        float: right;
+        font-family: $raleway-stack;
+        font-size: 14px;
+        margin-top: 45px;
+        @media #{$mobile}{
+            float: none;
+            margin-top: 15px;
+            text-align: center;
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}

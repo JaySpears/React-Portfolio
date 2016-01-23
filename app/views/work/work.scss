@@ -1,0 +1,100 @@
+//Importing global variables and styles.
+@import '../../styles/styles.scss';
+
+.workpage-intro{
+    p{
+        max-width: 700px;
+        margin: 10px auto 0 auto;
+        font-size: 15px;
+        text-align: center;
+        font-family: $raleway-stack;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        color: lightgray;
+        letter-spacing: 0.5px;
+        b{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: lightblue;
+            font-weight: 600;
+        }
+    }
+}
+
+.project-wrapper{
+    height: 200px;
+    border: 1px solid #330000;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0px 10px 20px 10px;
+    a{
+        display: block;
+        height: 100%;
+        transition: background-color 0.8s;
+        text-decoration: none;
+        p{
+            transition:opacity 0.8s;
+        }
+        &:hover{
+            background-color: rgba(0,0,0,0.7);
+            cursor: pointer;
+            p{
+                opacity: 1;
+            }
+        }
+    }
+    &.jiffylube{
+        background-image: url('../../images/jiffylube.png');
+    }
+    &.dfrg{
+        background-image: url('../../images/dfrg.png');
+    }
+    &.lowt{
+        background-image: url('../../images/lowt.png');
+    }
+    &.petmate{
+        background-image: url('../../images/petmate.png');
+    }
+    &.wholly-guacomole{
+        background-image: url('../../images/wholly-guacomole.png');
+    }
+    @media #{$desktop}{
+        width: 31.7%;
+        height: 200px;
+        float: left;
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+        &:nth-child(3n+1) {
+            margin-left: 0px;
+        }
+    }
+    @media #{$tablet}{
+        width: 48.2%;
+        float: left;
+        height: 200px;
+        &:nth-child(even){
+            margin-right: 0px;
+        }
+        &:nth-child(odd){
+            margin-left: 0px;
+        }
+    }
+    @media #{$mobile}{
+        margin-left: 0px;
+        margin-right: 0px;;
+    }
+    p{
+        margin: 0px;
+        opacity: 0;
+        font-family: $alice-stack;
+        padding-top: 84px;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
