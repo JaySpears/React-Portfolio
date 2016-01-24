@@ -11,7 +11,7 @@ class DfrgMobile extends Component {
     render(){
         return(
             <div className="project-wrapper dfrg">
-                <a href="#">
+                <a target="_blank" href="http://m.delfriscosgrille.com/">
                     <p>DFRG ( MOBILE )</p>
                 </a>
             </div>
