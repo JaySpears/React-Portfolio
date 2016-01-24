@@ -12,7 +12,7 @@ class DfrgMobile extends Component {
         return(
             <div className="project-wrapper dfrg">
                 <a href="#">
-                    <p>DFRG MOBILE</p>
+                    <p>DFRG ( MOBILE )</p>
                 </a>
             </div>
         )
