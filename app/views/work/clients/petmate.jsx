@@ -11,7 +11,7 @@ class Petmate extends Component {
     render(){
         return(
             <div className="project-wrapper petmate">
-                <a href="#">
+                <a target="_blank" href="http://www.petmate.com/">
                     <p>PETMATE</p>
                 </a>
             </div>

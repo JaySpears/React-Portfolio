@@ -11,7 +11,7 @@ class FooterCopyright extends Component {
     render(){
         return(
             <div>
-                <p>&copy; 2016 - Josh Spears | Powered by <a href="https://facebook.github.io/react/">ReactJS</a>.</p>
+                <p>&copy; 2016 - Josh Spears | Powered by <a target="_blank" href="https://facebook.github.io/react/">ReactJS</a>.</p>
             </div>
         )
     }
