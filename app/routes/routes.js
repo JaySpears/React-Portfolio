@@ -6,12 +6,15 @@ import ReactDOM from 'react-dom';
 //Import Components.
 import AboutElement from '../views/about/about.jsx';
 import WorkElement from '../views/work/work.jsx';
+import ResumeElement from '../views/resume/resume.jsx';
+
 
 //Set up routes.
 let routes = (
     <Router>
         <Route path='/' component={AboutElement}/>
         <Route path='/work' component={WorkElement}/>
+        <Route path='/resume' component={ResumeElement}/>
     </Router>
 );
 

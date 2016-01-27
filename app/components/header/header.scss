@@ -21,15 +21,15 @@ header{
         margin: 20px auto 0px auto;
         font-family: $raleway-stack;
         font-weight: 300;
-        color: lightgray;
+        color: #36454f;
         a{
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: 600;
         }
     }
     .navigation{
-        width: 191px;
+        width: 275px;
         margin: 0 auto;
         padding-left: 0px;
         li {
@@ -39,7 +39,7 @@ header{
             list-style: none;
             a{
                 font-size: 16px;
-                color: lightgray;
+                color: #36454f;
                 font-weight: 600;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;

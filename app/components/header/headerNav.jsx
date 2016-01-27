@@ -16,6 +16,7 @@ class HeaderNav extends Component {
                     <ul className="navigation clearfix">
                         <li><Link to="/">About</Link></li>
                         <li><Link to="/work">Projects</Link></li>
+                        <li><Link to="/resume">Resume</Link></li>
                     </ul>
                 </nav>
             </div>
