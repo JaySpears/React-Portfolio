@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 //Import Styles.
-import styles from './header.scss';
+import styles from '../header.scss';
 
 //Export Modules.
 export default

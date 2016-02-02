@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 
 //Import component modules.
-import FooterLinks from './FooterLinks.jsx';
-import FooterCopyright from './FooterCopyright.jsx';
+import FooterLinks from './partials/footerLinks.jsx';
+import FooterCopyright from './partials/footerCopyright.jsx';
 
 //Import Styles.
 import styles from './footer.scss';

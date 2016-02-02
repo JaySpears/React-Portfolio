@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import styles from './footer.scss';
+import styles from '../footer.scss';
 
 //Export Modules.
 export default
