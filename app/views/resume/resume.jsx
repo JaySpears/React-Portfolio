@@ -8,6 +8,10 @@ import ResumeStyles from './resume.scss';
 //Import Components.
 import Header from '../../components/header/header.jsx';
 import Footer from '../../components/footer/footer.jsx';
+import Ansira from './jobs/ansira.jsx';
+import Sq1 from './jobs/sq1.jsx';
+import PrintResume from './printResume.jsx';
+
 
 //Export Modules.
 export default
@@ -18,65 +22,9 @@ class ResumeElement extends Component {
             <div>
                 <Header />
                 <div className="page-container">
-                    <div className="job-container">
-                        <div className="job-description clearfix">
-                            <div className="job-title-mobile-wrapper">
-                                <p className="job-title">Jr. Front End Engineer</p>
-                                <p className="separator">/</p>
-                                <p className="job-company">Ansira</p>
-                            </div>
-                            <p className="job-timeline">Jan 2016 - Present</p>
-                        </div>
-                        <div className="job-responsibilities">
-                            <p>Responsibilities</p>
-                            <ul>
-                                <li>Architecturally structure responsive websites from scratch using HTML, CSS, SASS, and JavaScript.</li>
-                                <li>Reconstruct previously built responsive websites based on client request via creative assets.</li>
-                                <li>Engineer and maintain mobile applications.</li>
-                                <li>Produce responsive, dynamic landing pages.</li>
-                                <li>Implement technologies to improve development process. For example: Github, Grunt, NPM, Bower, Capistrano.</li>
-                                <li>Construct with third party libraries such as jQuery, Bootstrap, Zurb Foundation, and Bourbon Neat.</li>
-                                <li>Maintain client data via database: MySQL.</li>
-                                <li>Sustain weekly maintenance and deliveries for client websites.</li>
-                                <li>Ability to work with responsive PSD’s provided by creative departments.</li>
-                                <li>Discuss architecture structure of websites with the creative department to produce web responsive PSD's.</li>
-                                <li>Collaborate with Project Management to understand project process, and deadlines.</li>
-                                <li>Assemble and construct dynamic websites via CMS: WordPress, Joomla.</li>
-                                <li>Pursue together with the Quality Assurance department to find and fix website bugs.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="job-container">
-                        <div className="job-description clearfix">
-                            <div className="job-title-mobile-wrapper">
-                                <p className="job-title">Jr. Front End Engineer</p>
-                                <p className="separator">/</p>
-                                <p className="job-company">Ansira</p>
-                            </div>
-                            <p className="job-timeline">Jan 2016 - Present</p>
-                        </div>
-                        <div className="job-responsibilities">
-                            <p>Responsibilities</p>
-                            <ul>
-                                <li>Architecturally structure responsive websites from scratch using HTML, CSS, SASS, and JavaScript.</li>
-                                <li>Reconstruct previously built responsive websites based on client request via creative assets.</li>
-                                <li>Engineer and maintain mobile applications.</li>
-                                <li>Produce responsive, dynamic landing pages.</li>
-                                <li>Implement technologies to improve development process. For example: Github, Grunt, NPM, Bower, Capistrano.</li>
-                                <li>Construct with third party libraries such as jQuery, Bootstrap, Zurb Foundation, and Bourbon Neat.</li>
-                                <li>Maintain client data via database: MySQL.</li>
-                                <li>Sustain weekly maintenance and deliveries for client websites.</li>
-                                <li>Ability to work with responsive PSD’s provided by creative departments.</li>
-                                <li>Discuss architecture structure of websites with the creative department to produce web responsive PSD's.</li>
-                                <li>Collaborate with Project Management to understand project process, and deadlines.</li>
-                                <li>Assemble and construct dynamic websites via CMS: WordPress, Joomla.</li>
-                                <li>Pursue together with the Quality Assurance department to find and fix website bugs.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="print-resume-wrapper">
-                        <div><a href="#">Print Resume</a></div>
-                    </div>
+                    <Ansira />
+                    <Sq1 />
+                    <PrintResume />
                 </div>
                 <Footer />
             </div>
