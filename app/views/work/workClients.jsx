@@ -15,12 +15,12 @@ export default
 class WorkClients extends Component {
     render(){
         return(
-            <div>
+            <div className="clearfix project-container">
                 <WhollyGuacomole />
                 <Petmate />
                 <LowT />
-                <DfrgMobile />
                 <Jiffylube />
+                <DfrgMobile />
             </div>
         )
     }

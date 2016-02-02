@@ -1,2 +1,104 @@
 //Importing global variables and styles.
 @import '../../styles/styles.scss';
+
+.job-container{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    &:nth-last-child(1){
+        margin-bottom: 30px;
+    }
+    .job-description{
+        width: 100%;
+        font-family: $raleway-stack;
+        color: black;
+        .job-title-mobile-wrapper{
+            @media #{$mobile}{
+                content: '';
+                clear: both;
+                display: table;
+                p{
+                    margin-top: 0px;
+                }
+            }
+            .job-title{
+                float: left;
+                margin-right: 10px;
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .separator{
+                float: left;
+                color: $pink;
+                margin-right: 10px;
+                font-size: 30px;
+                margin-top: 12px;
+                font-weight: 300;
+                font-family: helvetica;
+                margin-bottom: 0px;
+                @media #{$mobile}{
+                    margin-top: -7px;
+                }
+            }
+            .job-company{
+                float: left;
+                font-size: 18px;
+            }
+        }
+
+        .job-timeline{
+            float: right;
+            @media #{$mobile}{
+                float: left;
+                margin-top: -15px;
+            }
+        }
+    }
+    .job-responsibilities{
+        color: black;
+        font-family: $raleway-stack;
+        p{
+            display: inline-block;
+            border-bottom: 2px solid $pink;
+            margin-bottom: 0px;
+        }
+        ul{
+            list-style: disc;
+            color: black;
+            @media #{$mobile}{
+                padding-left: 15px;
+            }
+            li{
+                line-height: 25px;
+                font-size: 15px;
+                @media #{$mobile}{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.print-resume-wrapper{
+    width: 100%;
+    div{
+        width: 280px;
+        margin: 35px auto 15px auto;
+        background-color: $pink;
+        text-align: center;
+        border-radius: 5px;
+        a {
+            display: block;
+            padding: 15px 0px;
+            font-family: $raleway-stack;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: border 1s;
+            &:hover{
+                border: 1px solid $pink;
+
+            }
+        }
+    }
+}
