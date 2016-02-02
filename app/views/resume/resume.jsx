@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import GlobalStyles from '../../styles/styles.scss';
 import ResumeStyles from './resume.scss';
 
 //Import Global Components.

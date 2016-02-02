@@ -1,5 +1,5 @@
 //Importing global variables and styles.
-@import '../../styles/styles.scss';
+@import '../../assets/styles/styles.scss';
 
 header{
     width: 100%;
@@ -9,7 +9,7 @@ header{
         width: 100px;
         height: 100px;
         margin: 10px auto 0 auto;
-        background-image: url('../../images/portrait.png');
+        background-image: url('../../assets/images/portrait.png');
         background-size: cover;
         border-radius: 100%;
         border: 1px solid $pink;

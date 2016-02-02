@@ -1,5 +1,5 @@
 //Importing global variables and styles.
-@import '../../styles/styles.scss';
+@import '../../assets/styles/styles.scss';
 
 .workpage-intro{
     p{
@@ -58,19 +58,19 @@
         }
     }
     &.jiffylube{
-        background-image: url('../../images/jiffylube.png');
+        background-image: url('../../assets/images/jiffylube.png');
     }
     &.dfrg{
-        background-image: url('../../images/dfrg.png');
+        background-image: url('../../assets/images/dfrg.png');
     }
     &.lowt{
-        background-image: url('../../images/lowt.png');
+        background-image: url('../../assets/images/lowt.png');
     }
     &.petmate{
-        background-image: url('../../images/petmate.png');
+        background-image: url('../../assets/images/petmate.png');
     }
     &.wholly-guacomole{
-        background-image: url('../../images/wholly-guacomole.png');
+        background-image: url('../../assets/images/wholly-guacomole.png');
     }
     @media #{$desktop}{
         width: 31.7%;
