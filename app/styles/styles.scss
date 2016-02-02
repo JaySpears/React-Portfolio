@@ -31,8 +31,7 @@ body{
     clear: both;
 }
 
-.container,
-.page-container {
+.container{
     @media #{$desktop}{
         width: 960px;
         margin: 0 auto;
@@ -42,21 +41,8 @@ body{
         margin: 0 auto;
         padding: 0px 40px;
     }
-}
-
-.container{
     @media #{$mobile}{
         padding: 0px 15px;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-.page-container {
-    padding-top: 30px;
-    padding-bottom: 120px;
-    @media #{$mobile}{
-        width: 93%;
         display: block;
         margin: 0 auto;
     }

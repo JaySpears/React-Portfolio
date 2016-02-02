@@ -5,9 +5,12 @@ import React, { Component } from 'react';
 import GlobalStyles from '../../styles/styles.scss';
 import AboutStyles from './about.scss';
 
-//Import Components.
+//Import Global Components.
 import Header from '../../components/header/header.jsx';
 import Footer from '../../components/footer/footer.jsx';
+import Container from '../../components/container/container.jsx';
+
+//Import About Components.
 import AboutIntro from './aboutIntro.jsx';
 
 //Export Modules.
@@ -18,7 +21,9 @@ class AboutElement extends Component {
         return (
             <div>
                 <Header />
-                <AboutIntro />
+                <Container>
+                    <AboutIntro />
+                </Container>
                 <Footer />
             </div>
         );

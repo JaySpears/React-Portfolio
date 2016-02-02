@@ -1,0 +1,21 @@
+//Importing global variables and styles.
+@import '../../styles/styles.scss';
+
+.page-container {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    @media #{$desktop}{
+        width: 960px;
+        margin: 0 auto;
+    }
+    @media #{$tablet}{
+        width: 89%;
+        margin: 0 auto;
+        padding: 0px 40px;
+    }
+    @media #{$mobile}{
+        width: 93%;
+        display: block;
+        margin: 0 auto;
+    }
+}

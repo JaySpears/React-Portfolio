@@ -4,9 +4,12 @@ import React, { Component } from 'react';
 //Import Styles.
 import WorkStyles from './work.scss';
 
-//Import Components.
+//Import Global Components.
 import Header from '../../components/header/header.jsx';
 import Footer from '../../components/footer/footer.jsx';
+import Container from '../../components/container/container.jsx';
+
+//Import Work Components.
 import WorkIntro from './workIntro.jsx';
 import WorkClients from './workClients.jsx';
 import WorkDisclaimer from './workDisclaimer.jsx';
@@ -19,11 +22,11 @@ class WorkElement extends Component {
         return (
             <div>
                 <Header />
-                <div className="page-container clearfix">
+                <Container>
                     <WorkIntro />
                     <WorkClients />
                     <WorkDisclaimer />
-                </div>
+                </Container>
                 <Footer />
             </div>
         );

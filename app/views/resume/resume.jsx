@@ -5,13 +5,15 @@ import React, { Component } from 'react';
 import GlobalStyles from '../../styles/styles.scss';
 import ResumeStyles from './resume.scss';
 
-//Import Components.
+//Import Global Components.
 import Header from '../../components/header/header.jsx';
 import Footer from '../../components/footer/footer.jsx';
+import Container from '../../components/container/container.jsx';
+
+//Import Resume Components.
 import Ansira from './jobs/ansira.jsx';
 import Sq1 from './jobs/sq1.jsx';
 import PrintResume from './printResume.jsx';
-
 
 //Export Modules.
 export default
@@ -21,11 +23,11 @@ class ResumeElement extends Component {
         return (
             <div>
                 <Header />
-                <div className="page-container">
+                <Container>
                     <Ansira />
                     <Sq1 />
                     <PrintResume />
-                </div>
+                </Container>
                 <Footer />
             </div>
         );
