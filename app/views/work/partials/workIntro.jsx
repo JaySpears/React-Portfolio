@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import WorkStyles from './work.scss';
+import WorkStyles from '../work.scss';
 
 //Export Modules.
 export default

@@ -10,9 +10,9 @@ import Footer from '../../components/footer/footer.jsx';
 import Container from '../../components/container/container.jsx';
 
 //Import Work Components.
-import WorkIntro from './workIntro.jsx';
-import WorkClients from './workClients.jsx';
-import WorkDisclaimer from './workDisclaimer.jsx';
+import WorkIntro from './partials/workIntro.jsx';
+import WorkClients from './partials/workClients.jsx';
+import WorkDisclaimer from './partials/workDisclaimer.jsx';
 
 //Export Modules.
 export default
