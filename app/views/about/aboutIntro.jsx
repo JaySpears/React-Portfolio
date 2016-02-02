@@ -10,7 +10,7 @@ export default
 class AboutIntro extends Component {
     render(){
         return(
-            <div className="page-container">
+            <div>
                 <p className="about-intro">I'm Josh.</p>
             </div>
         )
