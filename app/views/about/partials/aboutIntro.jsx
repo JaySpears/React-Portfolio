@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import styles from './about.scss';
+import styles from '../about.scss';
 
 //Export Modules.
 export default

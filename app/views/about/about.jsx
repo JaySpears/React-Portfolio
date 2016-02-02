@@ -10,7 +10,7 @@ import Footer from '../../components/footer/footer.jsx';
 import Container from '../../components/container/container.jsx';
 
 //Import About Components.
-import AboutIntro from './aboutIntro.jsx';
+import AboutIntro from './partials/aboutIntro.jsx';
 
 //Export Modules.
 export default
