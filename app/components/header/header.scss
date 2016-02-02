@@ -1,18 +1,18 @@
 //Importing global variables and styles.
-@import '../../styles/styles.scss';
+@import '../../assets/styles/styles.scss';
 
 header{
     width: 100%;
-    border-bottom: 2px solid  #330000;
+    border-bottom: 1px solid $pink;
     padding: 20px 0px 10px 0px;
     .portrait{
         width: 100px;
         height: 100px;
         margin: 10px auto 0 auto;
-        background-image: url('../../images/portrait.png');
+        background-image: url('../../assets/images/portrait.png');
         background-size: cover;
         border-radius: 100%;
-        border: 2px solid #330000;
+        border: 1px solid $pink;
     }
     .header-bio{
         text-align: center;
@@ -21,31 +21,39 @@ header{
         margin: 20px auto 0px auto;
         font-family: $raleway-stack;
         font-weight: 300;
-        color: lightgray;
+        color: black;
         a{
+            transition: color 1s;
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: 600;
+            &:hover{
+                color: $pink;
+            }
         }
     }
     .navigation{
-        width: 191px;
+        width: 300px;
         margin: 0 auto;
         padding-left: 0px;
         li {
             float: left;
-            padding: 5px 10px;
+            padding: 5px 15px;
             margin-top: 14px;
             list-style: none;
             a{
-                font-size: 16px;
-                color: lightgray;
-                font-weight: 600;
+                font-size: 15px;
+                color: black;
+                font-weight: 500;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
                 font-family: $raleway-stack;
                 text-decoration: none;
                 padding: 0px 2px 2px 2px;
+                transition: color 1s;
+                &:hover{
+                    color: $pink;
+                }
             }
             &:nth-child(3){
                 padding-right: 0px;

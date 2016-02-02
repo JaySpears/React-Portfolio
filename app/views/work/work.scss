@@ -1,42 +1,53 @@
 //Importing global variables and styles.
-@import '../../styles/styles.scss';
+@import '../../assets/styles/styles.scss';
 
 .workpage-intro{
     p{
-        max-width: 700px;
+        max-width: 800px;
         margin: 10px auto 0 auto;
         font-size: 15px;
+        color: black;
         text-align: center;
         font-family: $raleway-stack;
-        padding-bottom: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         font-weight: 400;
-        color: lightgray;
         letter-spacing: 0.5px;
+        &:nth-child(2){
+            margin-bottom: 30px;
+        }
         b{
-            color: white;
+            font-weight: 500;
+            color: black;
         }
         a{
             text-decoration: none;
-            color: lightblue;
+            color: $pink;
             font-weight: 600;
         }
     }
 }
-
+.project-container{
+    width: 100%;
+}
 .project-wrapper{
     height: 200px;
-    border: 1px solid #330000;
+    border: 1px solid $pink;
     background-size: cover;
     border-radius: 5px;
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 35px 10px;
     a{
         display: block;
         height: 100%;
-        transition: background-color 0.8s;
+        background-color: rgba(0,0,0,0.2);
+        transition: background-color 1.2s;
         text-decoration: none;
         p{
             transition:opacity 0.8s;
+            color: white;
+            font-family: $raleway-stack;
+            font-weight: 500;
+            font-size: 22px;
+            padding-top: 90px;
         }
         &:hover{
             background-color: rgba(0,0,0,0.7);
@@ -47,19 +58,19 @@
         }
     }
     &.jiffylube{
-        background-image: url('../../images/jiffylube.png');
+        background-image: url('../../assets/images/jiffylube.png');
     }
     &.dfrg{
-        background-image: url('../../images/dfrg.png');
+        background-image: url('../../assets/images/dfrg.png');
     }
     &.lowt{
-        background-image: url('../../images/lowt.png');
+        background-image: url('../../assets/images/lowt.png');
     }
     &.petmate{
-        background-image: url('../../images/petmate.png');
+        background-image: url('../../assets/images/petmate.png');
     }
     &.wholly-guacomole{
-        background-image: url('../../images/wholly-guacomole.png');
+        background-image: url('../../assets/images/wholly-guacomole.png');
     }
     @media #{$desktop}{
         width: 31.7%;
@@ -92,9 +103,15 @@
         opacity: 0;
         font-family: $alice-stack;
         padding-top: 84px;
-        color: white;
+        color: black;
         text-align: center;
         font-size: 24px;
         font-weight: 600;
     }
+}
+.disclaimer{
+    font-weight: 600;
+    font-size: 10px;
+    margin-top: 0px;
+    font-family: $raleway-stack;
 }
