@@ -10,9 +10,8 @@ import Footer from '../../components/footer/footer.jsx';
 import Container from '../../components/container/container.jsx';
 
 //Import Resume Components.
-import Ansira from './jobs/ansira.jsx';
-import Sq1 from './jobs/sq1.jsx';
-import PrintResume from './printResume.jsx';
+import ResumeJobs from './partials/resumeJobs.jsx'
+import PrintResume from './partials/printResume.jsx';
 
 //Export Modules.
 export default
@@ -23,8 +22,7 @@ class ResumeElement extends Component {
             <div>
                 <Header />
                 <Container>
-                    <Ansira />
-                    <Sq1 />
+                    <ResumeJobs />
                     <PrintResume />
                 </Container>
                 <Footer />

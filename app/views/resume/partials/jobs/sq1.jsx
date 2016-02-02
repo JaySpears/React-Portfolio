@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import ResumeStyles from '../resume.scss';
+import ResumeStyles from '../../resume.scss';
 
 //Export Modules.
 export default
 
-class Ansira extends Component {
+class Sq1 extends Component {
     render(){
         return(
             <div className="job-container">
@@ -15,9 +15,9 @@ class Ansira extends Component {
                     <div className="job-title-mobile-wrapper">
                         <p className="job-title">Jr. Front End Engineer</p>
                         <p className="separator">/</p>
-                        <p className="job-company">Ansira</p>
+                        <p className="job-company">Sq1</p>
                     </div>
-                    <p className="job-timeline">Jan 2016 - Present</p>
+                    <p className="job-timeline">Apr 2015 - Dec 2015</p>
                 </div>
                 <div className="job-responsibilities">
                     <p>Responsibilities</p>

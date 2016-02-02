@@ -2,17 +2,17 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import WorkStyles from '../work.scss';
+import WorkStyles from '../../work.scss';
 
 //Export Modules.
 export default
 
-class LowT extends Component {
+class Jifflube extends Component {
     render(){
         return(
-            <div className="project-wrapper lowt">
+            <div className="project-wrapper jiffylube">
                 <a href="#">
-                    <p>LOW T</p>
+                    <p>JIFFYLUBE</p>
                 </a>
             </div>
         )

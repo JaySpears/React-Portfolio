@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //Import Styles.
-import ResumeStyles from './resume.scss';
+import ResumeStyles from '../resume.scss';
 
 //Export Modules.
 export default
