@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 
 //Import component modules.
-import HeaderNav from './headerNav.jsx';
-import HeaderLogo from './headerLogo.jsx';
+import HeaderNav from './partials/headerNav.jsx';
+import HeaderLogo from './partials/headerLogo.jsx';
 
 //Import Styles.
 import styles from './header.scss';
