@@ -47,3 +47,12 @@ body{
         margin: 0 auto;
     }
 }
+
+//Print styles for resume.
+@media print {
+  header,
+  footer,
+  .print-resume-wrapper {
+      display: none !important;
+  }
+}

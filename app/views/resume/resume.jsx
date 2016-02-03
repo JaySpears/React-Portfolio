@@ -10,8 +10,11 @@ import Footer from '../../components/footer/footer.jsx';
 import Container from '../../components/container/container.jsx';
 
 //Import Resume Components.
-import ResumeJobs from './partials/resumeJobs.jsx'
+import ResumeJobs from './partials/resumeJobs.jsx';
+import ResumeReferences from './partials/resumeReferences.jsx';
+import ResumeSkills from './partials/resumeSkills.jsx';
 import PrintResume from './partials/printResume.jsx';
+
 
 //Export Modules.
 export default
@@ -23,6 +26,8 @@ class ResumeElement extends Component {
                 <Header />
                 <Container>
                     <ResumeJobs />
+                    <ResumeSkills />
+                    <ResumeReferences />
                     <PrintResume />
                 </Container>
                 <Footer />

@@ -1,11 +1,17 @@
 //Importing global variables and styles.
 @import '../../assets/styles/styles.scss';
 
+h2{
+    font-family: $raleway-stack;
+    text-align: center;
+    margin-top: 0px;
+}
 .job-container{
-    border-bottom: 1px solid black;
     margin-bottom: 20px;
     &:nth-last-child(1){
+        border-bottom: 1px solid black;
         margin-bottom: 30px;
+        padding-bottom: 20px;
     }
     .job-description{
         width: 100%;
@@ -56,6 +62,9 @@
     .job-responsibilities{
         color: black;
         font-family: $raleway-stack;
+        @media #{$desktop}{
+            padding-left: 50px;
+        }
         p{
             display: inline-block;
             border-bottom: 2px solid $pink;
@@ -75,6 +84,38 @@
                 }
             }
         }
+    }
+}
+.skills {
+    color: black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    font-family: $raleway-stack;
+    padding-bottom: 20px;
+    p{
+        display: inline-block;
+        border-bottom: 2px solid $pink;
+        margin-bottom: 0px;
+    }
+    ul{
+        list-style: disc;
+        color: black;
+        @media #{$mobile}{
+            padding-left: 15px;
+        }
+        li{
+            line-height: 25px;
+            font-size: 15px;
+            @media #{$mobile}{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.references{
+    p{
+        font-family: $raleway-stack;
+        text-align: center;
     }
 }
 .print-resume-wrapper{
