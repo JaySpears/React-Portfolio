@@ -14,13 +14,13 @@ class Ansira extends Component {
                 <div className="job-description clearfix">
                     <div className="job-title-mobile-wrapper">
                         <p className="job-title">Jr. Front End Engineer</p>
-                        <p className="separator">/</p>
+                        <p className="separator">=></p>
                         <p className="job-company">Ansira</p>
                     </div>
                     <p className="job-timeline">Apr 2015 - Present</p>
                 </div>
                 <div className="job-responsibilities">
-                    <p>Responsibilities</p>
+                    <p>Responsibilities:</p>
                     <ul>
                         <li>Create project structure of responsive websites from scratch using HTML, CSS (SASS), and JavaScript.</li>
                         <li>Reconstruct previously built responsive websites based on client request via creative assets.</li>

@@ -13,7 +13,9 @@ class ResumeReferences extends Component {
     render(){
         return (
             <div className="references">
-                <h2>References</h2>
+                <div className="header-wrapper">
+                    <h2>References</h2>
+                </div>
                 <p>Available upon request.</p>
             </div>
         );

@@ -13,14 +13,16 @@ class ResumeSkills extends Component {
     render(){
         return (
             <div className="skills">
-                <h2>Skills</h2>
+                <div className="header-wrapper">
+                    <h2>Skills</h2>
+                </div>
                 <ul>
-                    <li>Languages: HTML (XHMTL, HTML5), CSS, SASS, JavaScript.</li>
-                    <li>Libraries: jQuery, Bootstrap, Zurb Foundation, Bourbon Neat.</li>
-                    <li>Technologies: Github, NPM, Grunt, Bower, Gulp.</li>
-                    <li>CMS: WordPress, Joomla.</li>
-                    <li>Databases: MySQL.</li>
-                    <li>Frameworks: ReactJS.</li>
+                    <li><b>Languages</b>: HTML (XHMTL, HTML5), CSS, SASS, JavaScript.</li>
+                    <li><b>Helper libraries</b>: jQuery, Bootstrap, Zurb Foundation, Bourbon Neat.</li>
+                    <li><b>Technologies</b>: Github, NPM, Grunt, Bower, Gulp.</li>
+                    <li><b>JavaScript libraries</b>: ReactJS.</li>
+                    <li><b>CMS</b>: WordPress, Joomla.</li>
+                    <li><b>Databases</b>: MySQL.</li>
                     <li>Ability to build responsive websites, or mobile applications via PSDs.</li>
                 </ul>
             </div>

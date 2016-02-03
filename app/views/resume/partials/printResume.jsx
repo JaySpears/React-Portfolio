@@ -9,12 +9,12 @@ export default
 
 class PrintResume extends Component {
     printResume(){
-        window.print(document.getElementsByClassName('page-container'));
+        window.print();
     }
     render(){
         return(
             <div className="print-resume-wrapper">
-                <div onClick={this.printResume}><a href="#">Print Resume</a></div>
+                <div onClick={this.printResume}>Print Resume</div>
             </div>
         )
     }

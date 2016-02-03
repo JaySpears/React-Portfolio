@@ -3,7 +3,8 @@
 
 footer{
     width: 100%;
-    background-color: black;
+    background-color: white;
+    border-top: 3px solid black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -20,7 +21,7 @@ footer{
         }
         li{
             float: left;
-            color: white;
+            color: black;
             margin: 20px 18px 0px 18px;
             font-size: 13px;
             list-style: none;
@@ -31,7 +32,7 @@ footer{
                 margin-top: 10px;
             }
             a{
-                color: white;
+                color: black;
                 transition: color 1s;
                 &:hover{
                     color: lightblue;
@@ -40,7 +41,7 @@ footer{
         }
     }
     p{
-        color: white;
+        color: black;
         float: right;
         font-family: $raleway-stack;
         font-size: 14px;
@@ -51,9 +52,13 @@ footer{
             text-align: center;
         }
         a {
-            color: lightblue;
+            color: $blue;
             text-decoration: none;
             font-weight: 600;
+            transition: color 1s;
+            &:hover{
+                color: lightblue;
+            }
         }
     }
 }

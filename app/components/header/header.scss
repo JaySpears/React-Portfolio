@@ -3,8 +3,10 @@
 
 header{
     width: 100%;
-    border-bottom: 1px solid $pink;
+    border-bottom: 1px solid $gray;
     padding: 20px 0px 10px 0px;
+    background-color: $blue;
+    border-bottom: 3px solid lightblue;
     .portrait{
         width: 100px;
         height: 100px;
@@ -12,7 +14,6 @@ header{
         background-image: url('../../assets/images/portrait.png');
         background-size: cover;
         border-radius: 100%;
-        border: 1px solid $pink;
     }
     .header-bio{
         text-align: center;
@@ -21,15 +22,11 @@ header{
         margin: 20px auto 0px auto;
         font-family: $raleway-stack;
         font-weight: 300;
-        color: black;
+        color: white;
         a{
-            transition: color 1s;
             text-decoration: none;
-            color: black;
+            color: white;
             font-weight: 600;
-            &:hover{
-                color: $pink;
-            }
         }
     }
     .navigation{
@@ -43,7 +40,7 @@ header{
             list-style: none;
             a{
                 font-size: 15px;
-                color: black;
+                color: white;
                 font-weight: 500;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
@@ -52,7 +49,7 @@ header{
                 padding: 0px 2px 2px 2px;
                 transition: color 1s;
                 &:hover{
-                    color: $pink;
+                    color: $gray;
                 }
             }
             &:nth-child(3){

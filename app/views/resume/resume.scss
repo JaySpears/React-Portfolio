@@ -1,17 +1,164 @@
 //Importing global variables and styles.
 @import '../../assets/styles/styles.scss';
 
-h2{
-    font-family: $raleway-stack;
+.header-wrapper{
+    width: 100%;
     text-align: center;
-    margin-top: 0px;
+    h2{
+        font-family: $raleway-stack;
+        text-align: center;
+        margin-top: 0px;
+        display: inline-block;
+        border-bottom: 2px solid $blue;
+        margin: 0 auto 25px auto;
+        padding: 0px 10px 10px 10px;
+
+    }
+}
+
+@media print{
+    .job-container{
+        margin-bottom: 20px;
+        background-color: white;
+        &:nth-last-child(1){
+            margin-bottom: 0;
+            padding-bottom: 0px;
+        }
+        .job-description{
+            width: 100%;
+            font-family: $raleway-stack;
+            color: black;
+            .job-title-mobile-wrapper{
+                @media #{$mobile}{
+                    content: '';
+                    clear: both;
+                    display: table;
+                    p{
+                        margin-top: 0px;
+                    }
+                }
+                .job-title{
+                    float: left;
+                    margin-right: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                .separator{
+                    float: left;
+                    color: $blue;
+                    margin-right: 10px;
+                    font-size: 30px;
+                    margin-top: 12px;
+                    font-weight: 300;
+                    font-family: helvetica;
+                    margin-bottom: 0px;
+                    @media #{$mobile}{
+                        margin-top: -7px;
+                    }
+                }
+                .job-company{
+                    float: left;
+                    font-size: 18px;
+                }
+            }
+
+            .job-timeline{
+                float: right;
+                @media #{$mobile}{
+                    float: left;
+                    margin-top: -15px;
+                }
+            }
+        }
+        .job-responsibilities{
+            color: black;
+            font-family: $raleway-stack;
+            @media #{$desktop}{
+                padding-left: 50px;
+            }
+            p{
+                display: inline-block;
+                border-bottom: 2px solid $blue;
+                margin-bottom: 0px;
+            }
+            ul{
+                list-style: disc;
+                color: black;
+                @media #{$mobile}{
+                    padding-left: 15px;
+                }
+                li{
+                    line-height: 25px;
+                    font-size: 15px;
+                    @media #{$mobile}{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .skills {
+        color: black;
+        border-bottom: 1px solid black;
+        margin-bottom: 30px;
+        font-family: $raleway-stack;
+        padding-bottom: 20px;
+        p{
+            display: inline-block;
+            border-bottom: 2px solid $blue;
+            margin-bottom: 0px;
+        }
+        ul{
+            list-style: disc;
+            color: black;
+            @media #{$mobile}{
+                padding-left: 15px;
+            }
+            li{
+                line-height: 25px;
+                font-size: 15px;
+                @media #{$mobile}{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .references{
+        p{
+            font-family: $raleway-stack;
+            text-align: center;
+        }
+    }
+    .print-resume-wrapper{
+        width: 100%;
+        div{
+            width: 280px;
+            margin: 35px auto 15px auto;
+            background-color: #8AACB8;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            padding: 15px 0px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-family: $raleway-stack;
+            text-transform: uppercase;
+            color: white;
+            border: 1px solid black;
+            transition: background-color 1s;
+            &:hover{
+                background-color: #403232;
+            }
+        }
+    }
 }
 .job-container{
     margin-bottom: 20px;
     &:nth-last-child(1){
-        border-bottom: 1px solid black;
         margin-bottom: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
     .job-description{
         width: 100%;
@@ -34,10 +181,10 @@ h2{
             }
             .separator{
                 float: left;
-                color: $pink;
+                color: $blue;
                 margin-right: 10px;
-                font-size: 30px;
-                margin-top: 12px;
+                font-size: 15px;
+                margin-top: 19px;
                 font-weight: 300;
                 font-family: helvetica;
                 margin-bottom: 0px;
@@ -67,8 +214,8 @@ h2{
         }
         p{
             display: inline-block;
-            border-bottom: 2px solid $pink;
             margin-bottom: 0px;
+            font-weight: 600;
         }
         ul{
             list-style: disc;
@@ -88,18 +235,20 @@ h2{
 }
 .skills {
     color: black;
-    border-bottom: 1px solid black;
-    margin-bottom: 30px;
     font-family: $raleway-stack;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    h2{
+        margin-bottom: 20px;
+    }
     p{
         display: inline-block;
-        border-bottom: 2px solid $pink;
+        border-bottom: 2px solid $blue;
         margin-bottom: 0px;
     }
     ul{
         list-style: disc;
         color: black;
+
         @media #{$mobile}{
             padding-left: 15px;
         }
@@ -113,6 +262,9 @@ h2{
     }
 }
 .references{
+    h2{
+        margin-bottom: 10px;
+    }
     p{
         font-family: $raleway-stack;
         text-align: center;
@@ -123,23 +275,22 @@ h2{
     div{
         width: 280px;
         margin: 35px auto 15px auto;
-        background-color: $pink;
+        background-color: $blue;
+        border: 1px solid black;
         text-align: center;
         border-radius: 5px;
-        a {
-            display: block;
-            padding: 15px 0px;
-            font-family: $raleway-stack;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            border: 1px solid black;
-            border-radius: 5px;
-            transition: border 1s;
-            &:hover{
-                border: 1px solid $pink;
-
-            }
+        cursor: pointer;
+        display: block;
+        padding: 15px 0px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-family: $raleway-stack;
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid black;
+        transition: background-color 1s;
+        &:hover{
+            background-color: $gray;
         }
     }
 }
