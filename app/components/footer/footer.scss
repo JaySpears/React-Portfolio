@@ -35,7 +35,7 @@ footer{
                 color: black;
                 transition: color 1s;
                 &:hover{
-                    color: lightblue;
+                    color: $gray;
                 }
             }
         }
@@ -57,7 +57,7 @@ footer{
             font-weight: 600;
             transition: color 1s;
             &:hover{
-                color: lightblue;
+                color: $gray;
             }
         }
     }
