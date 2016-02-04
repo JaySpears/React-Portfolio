@@ -12,7 +12,7 @@ class LowT extends Component {
         return(
             <div className="project-wrapper lowt">
                 <a href="#">
-                    <p>LOW T</p>
+                    <p>Low T</p>
                 </a>
             </div>
         )

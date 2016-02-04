@@ -28,19 +28,22 @@
 }
 .project-container{
     width: 100%;
+    margin-bottom: 8px;
 }
 .project-wrapper{
     height: 200px;
-    border: 1px solid $blue;
+    border: 1px solid white;
     background-size: cover;
     border-radius: 5px;
-    margin: 0px 10px 35px 10px;
+    margin: 0px 10px 20px 10px;
     a{
         display: block;
         height: 100%;
         background-color: rgba(0,0,0,0.2);
         transition: background-color 1.2s;
         text-decoration: none;
+            border-radius: 5px;
+
         p{
             transition:opacity 0.8s;
             color: white;

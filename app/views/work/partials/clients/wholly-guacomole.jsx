@@ -12,7 +12,7 @@ class WhollyGuacomole extends Component {
         return(
             <div className="project-wrapper wholly-guacomole">
                 <a target="_blank" href="http://eatwholly.com/">
-                    <p>WHOLLY GUACAMOLE</p>
+                    <p>Wholly Guacamole</p>
                 </a>
             </div>
         )
