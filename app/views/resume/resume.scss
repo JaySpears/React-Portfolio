@@ -1,11 +1,29 @@
 //Importing global variables and styles.
 @import '../../assets/styles/styles.scss';
 
+.header-wrapper{
+    width: 100%;
+    text-align: center;
+    h2{
+        font-family: $raleway-stack;
+        text-align: center;
+        margin-top: 0px;
+        display: inline-block;
+        border-bottom: 2px solid $blue;
+        margin: 0 auto 25px auto;
+        padding: 0px 10px 10px 10px;
+
+    }
+}
+ .resume-header{
+     display: none;
+ }
+ 
 .job-container{
-    border-bottom: 1px solid black;
     margin-bottom: 20px;
     &:nth-last-child(1){
         margin-bottom: 30px;
+        padding-bottom: 0px;
     }
     .job-description{
         width: 100%;
@@ -28,10 +46,10 @@
             }
             .separator{
                 float: left;
-                color: $pink;
+                color: $blue;
                 margin-right: 10px;
-                font-size: 30px;
-                margin-top: 12px;
+                font-size: 15px;
+                margin-top: 19px;
                 font-weight: 300;
                 font-family: helvetica;
                 margin-bottom: 0px;
@@ -56,10 +74,13 @@
     .job-responsibilities{
         color: black;
         font-family: $raleway-stack;
+        @media #{$desktop}{
+            padding-left: 50px;
+        }
         p{
             display: inline-block;
-            border-bottom: 2px solid $pink;
             margin-bottom: 0px;
+            font-weight: 600;
         }
         ul{
             list-style: disc;
@@ -77,28 +98,191 @@
         }
     }
 }
+.skills {
+    color: black;
+    font-family: $raleway-stack;
+    padding-bottom: 10px;
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        display: inline-block;
+        border-bottom: 2px solid $blue;
+        margin-bottom: 0px;
+    }
+    ul{
+        list-style: disc;
+        color: black;
+
+        @media #{$mobile}{
+            padding-left: 15px;
+        }
+        li{
+            line-height: 25px;
+            font-size: 15px;
+            @media #{$mobile}{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.references{
+    h2{
+        margin-bottom: 10px;
+    }
+    p{
+        font-family: $raleway-stack;
+        text-align: center;
+    }
+}
 .print-resume-wrapper{
     width: 100%;
     div{
         width: 280px;
         margin: 35px auto 15px auto;
-        background-color: $pink;
+        background-color: $blue;
+        border: 1px solid black;
         text-align: center;
         border-radius: 5px;
-        a {
-            display: block;
-            padding: 15px 0px;
+        cursor: pointer;
+        display: block;
+        padding: 15px 0px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-family: $raleway-stack;
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid black;
+        transition: background-color 1s;
+        &:hover{
+            background-color: $gray;
+        }
+    }
+}
+//Styles for resume print.
+@media print{
+    @page{
+        size: auto;
+        margin: 5mm;
+     }
+     .resume-header{
+         display: block;
+     }
+    h2{
+        font-size: 14px;
+        padding-bottom: 0px;
+        border-bottom: 1px solid black !important;
+        line-height: 0px;
+        margin-bottom: 0px;
+    }
+    .job-container{
+        margin-bottom: 20px;
+        background-color: white;
+        &:nth-last-child(1){
+            margin-bottom: 5px;
+            padding-bottom: 0px;
+        }
+        .job-description{
+            width: 100%;
             font-family: $raleway-stack;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            border: 1px solid black;
-            border-radius: 5px;
-            transition: border 1s;
-            &:hover{
-                border: 1px solid $pink;
+            color: black;
+            margin-bottom: 0px;
+            line-height: 1px;
+            .job-title-mobile-wrapper{
+                .job-title{
+                    float: left;
+                    margin-right: 10px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin-top: 1px;
+                    margin-bottom: 0px;
 
+                }
+                .separator{
+                    float: left;
+                    color: $blue;
+                    margin-right: 10px;
+                    font-size: 12px;
+                    margin-top: 0.5px;
+                    font-weight: 300;
+                    font-family: helvetica;
+                    margin-bottom: 3px;
+                    padding-bottom: 1px;
+                }
+                .job-company{
+                    float: left;
+                    font-size: 12px;
+                    margin-top: 1px;
+
+                }
             }
+
+            .job-timeline{
+                line-height: 1px;
+                float: left;
+                font-size: 10px;
+                margin-top: 0px;
+            }
+        }
+        .job-responsibilities{
+            color: black;
+            font-family: $raleway-stack;
+
+            p{
+                margin-top: 0px;
+                display: inline-block;
+                margin-bottom: 0px;
+                font-size: 12px;
+            }
+            ul{
+                list-style: disc;
+                color: black;
+                margin-left: 20px;
+                @media #{$mobile}{
+                    padding-left: 15px;
+                }
+                li{
+                    line-height: 5px;
+                    margin-bottom: 0px;
+                    font-size: 10px;
+                    @media #{$mobile}{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .skills {
+        color: black;
+        font-family: $raleway-stack;
+        h2{
+            margin: 0px;
+        }
+        p{
+            display: inline-block;
+            border-bottom: 2px solid $blue;
+            margin-bottom: 0px;
+        }
+        ul{
+            list-style: disc;
+            color: black;
+            padding-top: 0px;
+            @media #{$mobile}{
+                padding-left: 15px;
+            }
+            li{
+                line-height: 15px;
+                margin-bottom: 0px;
+                font-size: 10px;
+            }
+        }
+    }
+    .references{
+        p{
+            font-family: $raleway-stack;
+            text-align: center;
+            font-size: 10px;
+            margin: 0;
         }
     }
 }

@@ -14,6 +14,9 @@ class ResumeJobs extends Component {
     render(){
         return (
             <div>
+                <div className="header-wrapper">
+                    <h2>Experience</h2>
+                </div>
                 <Ansira />
                 <Sq1 />
             </div>

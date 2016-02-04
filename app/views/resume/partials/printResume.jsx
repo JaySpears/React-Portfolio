@@ -8,10 +8,13 @@ import ResumeStyles from '../resume.scss';
 export default
 
 class PrintResume extends Component {
+    printResume(){
+        window.print();
+    }
     render(){
         return(
             <div className="print-resume-wrapper">
-                <div><a href="#">Print Resume</a></div>
+                <div onClick={this.printResume}>Print Resume</div>
             </div>
         )
     }
