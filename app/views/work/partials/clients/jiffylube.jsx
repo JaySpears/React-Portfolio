@@ -12,7 +12,7 @@ class Jifflube extends Component {
         return(
             <div className="project-wrapper jiffylube">
                 <a href="#">
-                    <p>JIFFYLUBE</p>
+                    <p>Jiffylube</p>
                 </a>
             </div>
         )

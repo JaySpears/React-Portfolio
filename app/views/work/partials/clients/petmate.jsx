@@ -12,7 +12,7 @@ class Petmate extends Component {
         return(
             <div className="project-wrapper petmate">
                 <a target="_blank" href="http://www.petmate.com/">
-                    <p>PETMATE</p>
+                    <p>Petmate</p>
                 </a>
             </div>
         )
