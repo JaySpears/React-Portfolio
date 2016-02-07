@@ -12,13 +12,15 @@
         border-bottom: 2px solid $blue;
         margin: 0 auto 25px auto;
         padding: 0px 10px 10px 10px;
-
+        @media #{$tablet}{
+            padding-top: 20px;
+        }
     }
 }
  .resume-header{
      display: none;
  }
- 
+
 .job-container{
     margin-bottom: 20px;
     &:nth-last-child(1){
@@ -54,7 +56,7 @@
                 font-family: helvetica;
                 margin-bottom: 0px;
                 @media #{$mobile}{
-                    margin-top: -7px;
+                    margin-top: 0px;
                 }
             }
             .job-company{
@@ -136,7 +138,11 @@
     }
 }
 .print-resume-wrapper{
+    display: none;
     width: 100%;
+    @media #{$desktop}{
+        display: block;
+    }
     div{
         width: 280px;
         margin: 35px auto 15px auto;

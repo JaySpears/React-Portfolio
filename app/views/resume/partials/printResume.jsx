@@ -9,7 +9,8 @@ export default
 
 class PrintResume extends Component {
     printResume(){
-        window.print();
+        const openResume = window.open('/app/assets/resume/resume.pdf');
+        openResume.print();
     }
     render(){
         return(
