@@ -1,0 +1,12 @@
+{
+  "site":{
+    "port": 3000,
+    "analytics": "UA-00000000-0"
+  },
+  "deploy":{
+    "username": "USERNAME",
+    "hostname": "HOSTNAME",
+    "path": "~/Portfolio",
+    "screen": "portfolio"
+  }
+}
