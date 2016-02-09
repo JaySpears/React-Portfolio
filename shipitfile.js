@@ -13,7 +13,7 @@ module.exports = function (shipit) {
       ignores: ['.git', 'node_modules'],
       rsync: ['--del'],
       keepReleases: 2,
-      key: '~/.ssh/id_rsa',
+      key: '/Users/joshspears/.ssh/joshspears.pem',
       shallowClone: true
     },
     production: {
