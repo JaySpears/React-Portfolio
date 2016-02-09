@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
+        'webpack-dev-server/client?http://joshspears.io',
         'webpack/hot/only-dev-server',
         path.resolve(__dirname, 'app/index.js')
     ],
