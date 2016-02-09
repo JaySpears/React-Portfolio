@@ -18,9 +18,9 @@ class ResumeSkills extends Component {
                 </div>
                 <ul>
                     <li><b>Languages</b>: HTML (XHMTL, HTML5), CSS, SASS, JavaScript.</li>
-                    <li><b>Helper libraries</b>: jQuery, Bootstrap, Zurb Foundation, Bourbon Neat.</li>
-                    <li><b>Technologies</b>: Github, NPM, Grunt, Bower, Gulp.</li>
+                    <li><b>Vendor libraries</b>: jQuery, Bootstrap, Zurb Foundation, Bourbon Neat.</li>
                     <li><b>JavaScript libraries</b>: ReactJS.</li>
+                    <li><b>Technologies</b>: Github, NPM, Grunt, Bower, Gulp.</li>
                     <li><b>CMS</b>: WordPress, Joomla.</li>
                     <li><b>Databases</b>: MySQL.</li>
                     <li>Ability to build responsive websites, or mobile applications via PSDs.</li>
