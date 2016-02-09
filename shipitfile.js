@@ -27,13 +27,8 @@ module.exports = function (shipit) {
   });
 
   // this task starts the server in a screen with a name set in the config
-  shipit.blTask('start_screen', function () {
-    return shipit.remote(pathStr + " && cd " + currentPath + " && screen -S " + config.deploy.screen + " -d -m npm start");
-  });
-
-  // this task starts the server directly in the shipit output.  use this instead of start_screen if you're having problems
-  shipit.blTask('start_session', function () {
-    return shipit.remote(pathStr + " && cd " + currentPath + " && npm start");
+  shipit.blTask('restart_process', function () {
+    return shipit.remote(pathStr + " && sudo stop portfolio && sudo start portfolio");
   });
 
   // this task copies the config.json from your local folder to the current folder
@@ -41,19 +36,9 @@ module.exports = function (shipit) {
     return shipit.remoteCopy('config.json', currentPath);
   });
 
-  // this task copies the config.json from the remote source's root into the current folder
-  shipit.blTask('install_remote_config', function () {
-    return shipit.remote("cd " + config.deploy.path + " && cp config.json " + currentPath);
-  });
-
-  // this task kills any screen with the name set in the config if it's running.  phrased as an if to prevent non-0 exit codes
-  shipit.blTask('kill_screen', function () {
-    return shipit.remote("if screen -ls | grep -q '" + config.deploy.screen + "'; then screen -S " + config.deploy.screen + " -p 0 -X stuff $'\\003'; fi;");
-  });
-
   shipit.on('deployed', function () {
     // this series of tasks will result in a good deploy assuming everything is \working
-    shipit.start( 'kill_screen', 'install', 'install_local_config', 'start_screen');
+    shipit.start( 'install', 'install_local_config', 'restart_process');
     // if you're having problems with the deploy being successful, but not actually starting the server, try this:
     //shipit.start('kill_screen', 'install', 'install_config', 'start_session');
   });
