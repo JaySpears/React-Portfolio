@@ -9,11 +9,11 @@ module.exports = function (shipit) {
     default: {
       workspace: 'tmp',
       deployTo: config.deploy.path,
-      repositoryUrl: 'https://github.com/snollygolly/koa-starter.git',
+      repositoryUrl: 'https://github.com/JoshSpears3/Portfolio',
       ignores: ['.git', 'node_modules'],
       rsync: ['--del'],
       keepReleases: 2,
-      key: '~/.ssh/id_rsa',
+      key: '/Users/joshspears/.ssh/joshspears.pem',
       shallowClone: true
     },
     production: {
