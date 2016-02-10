@@ -2,11 +2,19 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        'webpack-dev-server/client?http://joshspears.io',
-        'webpack/hot/only-dev-server',
-        path.resolve(__dirname, 'app/index.js')
-    ],
+    entry: {
+        development: [
+            'webpack-dev-server/client?http://localhost:3000',
+            'webpack/hot/only-dev-server',
+            path.resolve(__dirname, 'app/index.js')
+        ],
+        production: [
+            'webpack-dev-server/client?http://joshspears.io',
+            'webpack/hot/only-dev-server',
+            path.resolve(__dirname, 'app/index.js')
+        ]
+    },
+
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
