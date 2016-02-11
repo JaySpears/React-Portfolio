@@ -11,7 +11,7 @@ import Container from '../../components/container/container.jsx';
 
 //Import Work Components.
 import WorkIntro from './partials/workIntro.jsx';
-import WorkClients from './partials/workClients.jsx';
+import ResponsiveBuilds from './partials/responsiveBuilds.jsx';
 import WorkDisclaimer from './partials/workDisclaimer.jsx';
 
 //Export Modules.
@@ -24,7 +24,7 @@ class WorkElement extends Component {
                 <Header />
                 <Container>
                     <WorkIntro />
-                    <WorkClients />
+                    <ResponsiveBuilds />
                     <WorkDisclaimer />
                 </Container>
                 <Footer />
