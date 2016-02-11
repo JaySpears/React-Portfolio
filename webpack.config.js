@@ -15,7 +15,7 @@ module.exports = {
     //     ]
     // },
     entry: [
-        'webpack-dev-server/client?http://joshspears.io',
+        'webpack-dev-server/client?http://localhost',
         'webpack/hot/only-dev-server',
         path.resolve(__dirname, 'app/index.js')
     ],
