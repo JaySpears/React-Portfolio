@@ -11,7 +11,7 @@ class Jifflube extends Component {
     render(){
         return(
             <div className="project-wrapper jiffylube">
-                <a href="#">
+                <a target="_blank" href="http://hasijiffylube.com/boston">
                     <p>Jiffylube</p>
                 </a>
             </div>
