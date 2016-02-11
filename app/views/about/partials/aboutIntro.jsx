@@ -11,7 +11,7 @@ class AboutIntro extends Component {
     render(){
         return(
             <div>
-                <p className="about-intro">I'm Josh.</p>
+                <p className="about-intro">I'm Josh. 22 years of age.</p>
             </div>
         )
     }
