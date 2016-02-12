@@ -1,5 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
+var NyanProgressPlugin = require('nyan-progress-webpack-plugin');
+var ProgressBarPlugin = require('progress-bar-webpack-plugin');
+
 
 module.exports = {
     entry: [
@@ -15,7 +18,9 @@ module.exports = {
 
     // Require the webpack and react-hot-loader plugins
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new NyanProgressPlugin(),
+        new ProgressBarPlugin() 
     ],
 
     resolve: {
