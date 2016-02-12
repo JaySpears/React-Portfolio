@@ -30,6 +30,16 @@
     width: 100%;
     margin-bottom: 8px;
 }
+.mobile-builds{
+    display: none;
+    @media #{$desktop}{
+        display: block;
+    }
+    .iphone-mockup{
+        height: 600px;
+        margin-top: 40px;
+    }
+}
 .desktop-builds{
     display: none;
     width: 100%;
@@ -54,7 +64,7 @@
     width: 700px;
     height: 392px;
     position: absolute;
-    top: 413px;
+    top: 340px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -120,30 +130,6 @@
                 p{
                     opacity: 1;
                 }
-            }
-        }
-    }
-    a{
-        display: block;
-        height: 100%;
-        background-color: rgba(0,0,0,0.2);
-        transition: background-color 1.2s;
-        text-decoration: none;
-            border-radius: 5px;
-
-        p{
-            transition:opacity 0.8s;
-            color: white;
-            font-family: $raleway-stack;
-            font-weight: 500;
-            font-size: 22px;
-            padding-top: 90px;
-        }
-        &:hover{
-            background-color: rgba(0,0,0,0.7);
-            cursor: pointer;
-            p{
-                opacity: 1;
             }
         }
     }

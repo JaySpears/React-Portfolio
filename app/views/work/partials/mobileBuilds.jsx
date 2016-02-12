@@ -15,7 +15,7 @@ import Jiffylube from './clients/jiffylube.jsx';
 //Export Modules.
 export default
 
-class ResponsiveBuilds extends Component {
+class MobileBuilds extends Component {
     render(){
         const settings = {
           infinite: true,
@@ -25,19 +25,8 @@ class ResponsiveBuilds extends Component {
         };
         return(
             <div className="clearfix project-container">
-                <div className="desktop-builds">
-                    <img className="mac-mockup" src="app/assets/images/mac-desktop.png" />
-                    <Slider {...settings}>
-                        <div>
-                            <WhollyGuacomole />
-                        </div>
-                        <div>
-                            <Petmate />
-                        </div>
-                        <div>
-                            <Jiffylube />
-                        </div>
-                    </Slider>
+                <div className="mobile-builds clearfix">
+                    <img className="iphone-mockup" src="app/assets/images/iphone-mockup.png" />
                 </div>
             </div>
         )

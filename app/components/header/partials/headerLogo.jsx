@@ -9,12 +9,10 @@ export default
 
 class HeaderLogo extends Component {
     render(){
+        const logo = '<JS />'
         return(
-            <div>
-                <div className="portrait"></div>
-                <p className="header-bio">
-                    Jr. front-end engineer at <a href="http://ansira.com/">Ansira</a>.
-                </p>
+            <div className="logo">
+                <p>{logo}</p>
             </div>
         )
     }

@@ -12,8 +12,8 @@ import ResumeElement from '../views/resume/resume.jsx';
 //Set up routes.
 let routes = (
     <Router>
-        <Route path='/' component={AboutElement}/>
-        <Route path='/work' component={WorkElement}/>
+        <Route path='/' component={WorkElement}/>
+        <Route path='/about' component={AboutElement}/>
         <Route path='/resume' component={ResumeElement}/>
     </Router>
 );
