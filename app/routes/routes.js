@@ -8,7 +8,6 @@ import AboutElement from '../views/about/about.jsx';
 import WorkElement from '../views/work/work.jsx';
 import ResumeElement from '../views/resume/resume.jsx';
 
-
 //Set up routes.
 let routes = (
     <Router>
